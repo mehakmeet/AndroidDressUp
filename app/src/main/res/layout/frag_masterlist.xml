@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/master_list_fragment"
     android:name="startup.mehakmeet.androiddressup.ui.MasterListFragment"
     >
 
-</fragment>
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnWidth="80dp"
+        android:numColumns="auto_fit"
+        android:stretchMode="columnWidth"
+        android:id="@+id/masterListGrid"/>
+
+</RelativeLayout>
