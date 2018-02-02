@@ -1,5 +1,6 @@
 package startup.mehakmeet.androiddressup.ui;
 
+import android.content.Intent;
 import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -15,10 +16,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
+        Intent i=getIntent();
         if(savedInstanceState==null) {
             BodyPartFragment headFrag = new BodyPartFragment();
             headFrag.setmImageIds(AndroidImageAssets.getHeads());
-            headFrag.setmListIndex(1);
+            headFrag.setmListIndex(i.getIntExtra(MasterActivity.HEAD,0));
 
 
             FragmentManager fragman = getSupportFragmentManager();
@@ -29,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
 
             BodyPartFragment torsoFrag = new BodyPartFragment();
             torsoFrag.setmImageIds(AndroidImageAssets.getBodies());
-            torsoFrag.setmListIndex(1);
+            torsoFrag.setmListIndex(i.getIntExtra(MasterActivity.BODY,0));
 
             FragmentManager fragman2 = getSupportFragmentManager();
 
@@ -40,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
 
             BodyPartFragment legFrag = new BodyPartFragment();
             legFrag.setmImageIds(AndroidImageAssets.getLegs());
-            legFrag.setmListIndex(1);
+            legFrag.setmListIndex(i.getIntExtra(MasterActivity.LEG,0));
 
             FragmentManager fragman3 = getSupportFragmentManager();
 

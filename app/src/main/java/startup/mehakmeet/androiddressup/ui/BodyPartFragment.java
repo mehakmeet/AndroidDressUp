@@ -22,6 +22,8 @@ import startup.mehakmeet.androiddressup.data.AndroidImageAssets;
 public class BodyPartFragment extends Fragment {
 
 
+
+
     public static final String IMAGE_ID_LIST="image_ids";
     public static final String LIST_INDEX="list_index";
     private List<Integer> mImageIds;
