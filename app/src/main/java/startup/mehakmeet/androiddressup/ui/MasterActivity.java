@@ -1,8 +1,9 @@
 package startup.mehakmeet.androiddressup.ui;
 
+
 import android.os.Bundle;
+import android.support.v4.app.FragmentManager;
 import android.os.PersistableBundle;
-import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 
 import startup.mehakmeet.androiddressup.R;
@@ -14,8 +15,17 @@ import startup.mehakmeet.androiddressup.R;
 public class MasterActivity extends AppCompatActivity {
 
     @Override
-    public void onCreate(@Nullable Bundle savedInstanceState, @Nullable PersistableBundle persistentState) {
-        super.onCreate(savedInstanceState, persistentState);
+    public void onCreate( Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
         setContentView(R.layout.master_main);
+
+        MasterListFragment mf=new MasterListFragment();
+
+        FragmentManager fm = getSupportFragmentManager();
+
+        fm.beginTransaction()
+                .add(R.id.masterList_container, mf)
+                .commit();
+
     }
 }

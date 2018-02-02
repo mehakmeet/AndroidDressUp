@@ -4,6 +4,7 @@
     android:layout_height="match_parent"
     android:id="@+id/master_list_fragment"
     android:name="startup.mehakmeet.androiddressup.ui.MasterListFragment"
+    android:background="@android:color/white"
     >
 
     <GridView
