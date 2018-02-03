@@ -6,3 +6,7 @@ An Android Avatar Making app.just for fun..also helpds to learn Master Flow Deta
 ![1](https://user-images.githubusercontent.com/25390047/35769213-cc0f8024-092d-11e8-9c59-85487f1b17ac.JPG)
 ### Body Fragment
 ![2](https://user-images.githubusercontent.com/25390047/35769222-e6ed2180-092d-11e8-832a-8048bf171415.JPG)
+### Master-Detail Flow(How the same app looks on tablet)
+![4](https://user-images.githubusercontent.com/25390047/35772234-564054bc-0960-11e8-934e-359be85ab58d.JPG)
+
+
